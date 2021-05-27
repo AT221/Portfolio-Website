@@ -1,0 +1,31 @@
+@import '../../SASS/Variables';
+
+.navi-container{
+    .brand{
+        margin-left: 4vw;
+        border: 2px solid $navTextColor;
+        padding: 2vh;
+        span{
+            font-weight: 900;
+            padding-left: 7px;
+            
+        }
+    }
+    
+    .nav-links{
+        margin: 0 2vw;
+        font-size: 20px;
+        
+    }
+    
+}
+
+
+
+//NavBar Colors
+$navbar-light-color:             $navTextColor;
+$navbar-light-hover-color:        $navHover;
+$navbar-light-active-color:         $navTextColor;
+$navbar-light-brand-color:           $navTextColor;
+$navbar-light-brand-hover-color:    $navHover;
+@import "~bootstrap/scss/bootstrap";

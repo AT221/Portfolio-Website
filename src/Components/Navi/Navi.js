@@ -8,7 +8,7 @@ const Navi = () => {
     return (
         <div className='navi-container'>
             <Row>
-            <Navbar collapseOnSelect expand='sm' className='bg-transparent mt-4' fixed='top'>
+            <Navbar collapseOnSelect expand='sm' className=' p-3' fixed='top' id='nav'>
                 <Container fluid  >
                     <Col>
                         <Navbar.Brand className='brand'>

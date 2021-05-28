@@ -1,0 +1,34 @@
+@import '../../SASS/Variables';
+
+.body{
+    height: 100%;
+    .img{
+        height: 720px; 
+        width: 100%;
+        background-image: url('../../Images/Top Body/Laptop.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.466);
+        background-blend-mode: darken;
+        .txt-container{
+            color: $navTextColor;
+            text-align: center;
+            padding-top: 30vh;
+            .txt{
+                font-family: $topBodyFont;
+                font-weight: bold;
+                font-size: 64px;
+                line-height: 90%;
+                span{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    
+    .skills{
+        background-color: $skillBackColor;
+    }
+}

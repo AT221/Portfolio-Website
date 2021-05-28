@@ -1,14 +1,14 @@
 @import '../../SASS/Variables';
-
 .navi-container{
+    font-family:$navFont;
     .brand{
         margin-left: 4vw;
         border: 2px solid $navTextColor;
         padding: 2vh;
+        font-size: 24px;
         span{
             font-weight: 900;
             padding-left: 7px;
-            
         }
     }
     
@@ -20,12 +20,16 @@
     
 }
 
-
+#nav{
+    background-color: rgba(0, 0, 0, 0.616);
+    // background-color: rgba(0, 0, 0, 0.418);
+}
 
 //NavBar Colors
-$navbar-light-color:             $navTextColor;
-$navbar-light-hover-color:        $navHover;
+$navbar-light-color:  $navTextColor;
 $navbar-light-active-color:         $navTextColor;
 $navbar-light-brand-color:           $navTextColor;
+$navbar-light-hover-color:        $navHover;
 $navbar-light-brand-hover-color:    $navHover;
+
 @import "~bootstrap/scss/bootstrap";

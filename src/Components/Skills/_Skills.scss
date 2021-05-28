@@ -14,6 +14,7 @@
             border: 5px solid $circleBorderColor;
             background-color: $circleFillColor;
             animation: dropDown 1.5s ease-in normal; 
+            
         }
     }
 }
@@ -26,8 +27,14 @@
 
 
 .undefined{
-    display: none;
-    
+    opacity: 0;
+    width: 90px;
+    height: 90px;
+    object-fit: scale-down;
+    object-position:  100%;
+    border: 5px solid $circleBorderColor;
+    background-color: $circleFillColor;
+    animation: dropUp 1.5s ease-in normal;
 }
 
 .stretch{
@@ -47,6 +54,19 @@
     100%{
         opacity: 100%;
         transform: translateY(0vh);
+
+    }
+} 
+
+@keyframes dropUp {
+    0%{
+        opacity: 100%;
+        transform: translateY(0vh);
+        
+    }
+    100%{
+        transform: translateY(-15vh);
+        opacity: 0;
 
     }
 } 

@@ -3,7 +3,7 @@ import './_Skills.scss';
 import {Row, Col, Container, Image} from 'react-bootstrap';
 import SkillsImages from '../Skills/SkillsImages';
 
-const Skills = () => {
+const Skills = (props) => {
     return (
         <div>
             <Container className='skill-container'>

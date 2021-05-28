@@ -4,11 +4,18 @@ import './_Navi.scss';
 import {Nav, Navbar, Row, Col, Container} from 'react-bootstrap';
 
 
-const Navi = () => {
+const Navi = (props) => {
+    const handleScroll = () =>{
+        window.scrollY > 667 ? props.setScroll(true) : props.setScroll(false);
+      }
+      window.addEventListener('scroll', handleScroll)
+
+
+      
     return (
         <div className='navi-container'>
             <Row>
-            <Navbar collapseOnSelect expand='sm' className=' p-3' fixed='top' id='nav'>
+            <Navbar collapseOnSelect expand='sm' className=' p-3' fixed='top'  id={props.scroll ? 'nav' : undefined}>
                 <Container fluid  >
                     <Col>
                         <Navbar.Brand className='brand'>

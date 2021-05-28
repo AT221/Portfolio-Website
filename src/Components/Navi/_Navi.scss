@@ -3,11 +3,12 @@
     font-family:$navFont;
     .brand{
         margin-left: 4vw;
-        border: 2px solid $navTextColor;
+        // border: 5px solid $navTextColor;
+        // border: 2px solid $navTextColor;
         padding: 2vh;
-        font-size: 24px;
+        font-size: 34px;
         span{
-            font-weight: 900;
+            font-weight: bolder;
             padding-left: 7px;
         }
     }
@@ -25,6 +26,10 @@
     // background-color: rgba(0, 0, 0, 0.418);
 }
 
+
+
+
+
 //NavBar Colors
 $navbar-light-color:  $navTextColor;
 $navbar-light-active-color:         $navTextColor;
@@ -33,3 +38,4 @@ $navbar-light-hover-color:        $navHover;
 $navbar-light-brand-hover-color:    $navHover;
 
 @import "~bootstrap/scss/bootstrap";
+

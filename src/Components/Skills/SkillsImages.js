@@ -7,7 +7,7 @@ import bootstrap from '../../Images/Skills/Bootstrap.png';
 import angular from '../../Images/Skills/Angular.png';
 import typeScript from '../../Images/Skills/TypeScript.png';
 
-import javascript from '../../Images/Skills/Javascript.png';
+import javascript from '../../Images/Skills/JavaScript.png';
 import jQuery from '../../Images/Skills/JQuery.png';
 
 import html from '../../Images/Skills/HTML.png';

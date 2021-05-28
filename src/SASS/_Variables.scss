@@ -4,6 +4,7 @@
 //NavBar Colors
 $navTextColor: #E9F1F7;
 $navHover: #F4D35E;
+$pulsatingColor: #F95738;
 
 
 //Fonts
@@ -16,5 +17,7 @@ $circleFillColor: #E9F1F7;
 $skillBackColor: #BFD0E0;
 
 
-
-
+@mixin bg-light() {
+    color:red;
+    // animation: pulsate 1.5s ease-in-out infinite forwards; 
+}

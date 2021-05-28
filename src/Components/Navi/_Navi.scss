@@ -1,4 +1,8 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
 @import '../../SASS/Variables';
+
 .navi-container{
     font-family:$navFont;
     .brand{
@@ -7,6 +11,7 @@
         // border: 2px solid $navTextColor;
         padding: 2vh;
         font-size: 34px;
+        animation: pulsate 10s ease-in infinite forwards; 
         span{
             font-weight: bolder;
             padding-left: 7px;
@@ -16,7 +21,7 @@
     .nav-links{
         margin: 0 2vw;
         font-size: 20px;
-        
+        animation: pulsate 10s ease-in infinite forwards; 
     }
     
 }
@@ -26,16 +31,25 @@
     // background-color: rgba(0, 0, 0, 0.418);
 }
 
-
-
-
+@keyframes pulsate {
+    0% {
+      color: $navTextColor;
+    }
+    50% {
+      color: $pulsatingColor;
+    }
+    100% {
+      color: $navTextColor;
+    }
+  }
 
 //NavBar Colors
-$navbar-light-color:  $navTextColor;
+$navbar-light-color:  $navTextColor ;
 $navbar-light-active-color:         $navTextColor;
 $navbar-light-brand-color:           $navTextColor;
 $navbar-light-hover-color:        $navHover;
 $navbar-light-brand-hover-color:    $navHover;
 
 @import "~bootstrap/scss/bootstrap";
+
 

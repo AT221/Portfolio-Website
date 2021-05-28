@@ -3,7 +3,7 @@ import './_TopBody.scss';
 import Skills from '../Skills/Skills';
 
 const TopBody = (props) => {
-    
+
     return (
         <div className='body'>
 
@@ -18,7 +18,7 @@ const TopBody = (props) => {
         </div>
         
         <div className='skills'>
-           <Skills scroll ={props.scroll}/>
+           <Skills bounce={props.bounce}/>
         </div>
 
         <div className='img'></div>

@@ -8,11 +8,12 @@ import './_App.scss';
 
 const App = () => {
   const [scroll, setScroll] = useState(false);
+  const [bounce, setBounce] = useState(false);
 
   return (
     <div>
-        <Navi scroll={scroll} setScroll={setScroll}/>
-        <TopBody scroll={scroll}/>
+        <Navi scroll={scroll} setScroll={setScroll} setBounce={setBounce}/>
+        <TopBody bounce={bounce} />
     </div>
   )
 }

@@ -5,10 +5,12 @@ import {Nav, Navbar, Row, Col, Container} from 'react-bootstrap';
 
 
 const Navi = (props) => {
+
     const handleScroll = () =>{
         window.scrollY > 667 ? props.setScroll(true) : props.setScroll(false);
+        window.scrollY > 200 ? props.setBounce(true) : props.setBounce(false);
       }
-      window.addEventListener('scroll', handleScroll)
+      window.addEventListener('scroll', handleScroll);
 
 
       

@@ -13,6 +13,29 @@
             object-position:  100%;
             border: 5px solid $circleBorderColor;
             background-color: $circleFillColor;
+            animation: dropDown 1.5s ease-in-out forwards; 
+            // animation: dropDown 1.2s ease-in-out forwards; 
         }
     }
 }
+
+.stretch{
+    height: 30vh;
+
+}
+
+.undefined{
+    display: none;
+}
+
+
+@keyframes dropDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-10vh);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0vh);
+    }
+} 

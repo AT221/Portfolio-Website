@@ -2,16 +2,8 @@
 
 .body{
     height: 100%;
-    .img{
-        height: 720px; 
-        width: 100%;
-        background-image: url('../../Images/Top Body/Laptop.jpg');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: rgba(0, 0, 0, 0.466);
-        background-blend-mode: darken;
+    .upperImg{
+        @include parallax('../Images/TopBody/Laptop.jpg');
         .txt-container{
             color: $navTextColor;
             text-align: center;
@@ -31,7 +23,13 @@
     
     .skills{
         background-color: $skillBackColor;
-        
     }
+
+    .lowerImg{
+        @include parallax('../Images/TopBody/Typing.jpg');
+
+    }
+
+
 }
 

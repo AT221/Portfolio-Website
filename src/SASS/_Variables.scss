@@ -17,7 +17,15 @@ $circleFillColor: #E9F1F7;
 $skillBackColor: #BFD0E0;
 
 
-@mixin bg-light() {
-    color:red;
-    // animation: pulsate 1.5s ease-in-out infinite forwards; 
+@mixin parallax ($img){
+    height: 720px; 
+    width: 100%;
+    background-image: url($img);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.466);
+    background-blend-mode: darken;
 }
+

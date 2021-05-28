@@ -7,7 +7,7 @@ const TopBody = (props) => {
     return (
         <div className='body'>
 
-        <div className='img'>
+        <div className='upperImg'>
             <div className='txt-container'>
                 <p className='txt'> 
                 Austin Tyler 
@@ -21,7 +21,7 @@ const TopBody = (props) => {
            <Skills bounce={props.bounce}/>
         </div>
 
-        <div className='img'></div>
+        <div className='lowerImg'></div>
 
         </div>
     )

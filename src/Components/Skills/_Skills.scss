@@ -13,29 +13,40 @@
             object-position:  100%;
             border: 5px solid $circleBorderColor;
             background-color: $circleFillColor;
-            animation: dropDown 1.5s ease-in-out forwards; 
-            // animation: dropDown 1.2s ease-in-out forwards; 
+            animation: dropDown 1.5s ease-in normal; 
         }
     }
 }
 
-.stretch{
-    height: 30vh;
-
+.skill-img:hover{
+    transform: scale(1.5);
+    padding: .3em;
 }
+
+
 
 .undefined{
     display: none;
+    
 }
+
+.stretch{
+    height: 30vh;
+    
+}
+
 
 
 @keyframes dropDown {
     0%{
+        display: none;
         opacity: 0;
-        transform: translateY(-10vh);
+        transform: translateY(-15vh);
+
     }
     100%{
         opacity: 100%;
         transform: translateY(0vh);
+
     }
 } 

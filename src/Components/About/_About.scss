@@ -1,0 +1,22 @@
+@import '../../SASS/Variables';
+
+.about-container{
+    background-color: $aboutBackColor;
+    height: fit-content;
+    .container-about{
+        padding-top: 10vh;
+        .img-container{
+            padding: 1vh 7vh ;
+            .about-img{
+                width:300px;
+                height: 300px;
+                object-fit: cover;
+                object-position: top right;
+                .card-container{
+                    margin-top: 4vh;
+                }
+            }
+        }
+    }
+}
+    

@@ -3,7 +3,7 @@
 .body{
     height: 100%;
     .upperImg{
-        @include parallax('../Images/TopBody/Laptop.jpg');
+        @include parallax('../Images/TopBody/Laptop.jpg', 720px);
         .txt-container{
             color: $navTextColor;
             text-align: center;
@@ -24,10 +24,10 @@
     .skills{
         background-color: $skillBackColor;
     }
-
+    
     .lowerImg{
-        @include parallax('../Images/TopBody/Typing.jpg');
-
+        @include parallax('../Images/TopBody/Typing.jpg', 420px );
+        
     }
 
 

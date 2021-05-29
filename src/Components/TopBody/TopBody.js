@@ -22,7 +22,6 @@ const TopBody = (props) => {
         </div>
 
         <div className='lowerImg'></div>
-
         </div>
     )
 }

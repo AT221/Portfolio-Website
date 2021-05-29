@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import About from '../About/About';
 import Navi from '../Navi/Navi';
 import TopBody from '../TopBody/TopBody';
 
@@ -14,6 +15,7 @@ const App = () => {
     <div>
         <Navi scroll={scroll} setScroll={setScroll} setBounce={setBounce}/>
         <TopBody bounce={bounce} />
+        <About/>
     </div>
   )
 }

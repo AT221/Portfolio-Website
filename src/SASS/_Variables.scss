@@ -3,7 +3,7 @@
 
 //NavBar Colors
 $navTextColor: #E9F1F7;
-$navHover: #F4D35E;
+$navHover: #F95738;
 $pulsatingColor: #F95738;
 
 
@@ -16,9 +16,12 @@ $circleBorderColor: #000;
 $circleFillColor: #E9F1F7;
 $skillBackColor: #BFD0E0;
 
+//About
+$aboutBackColor: #BFD0E0;
 
-@mixin parallax ($img){
-    height: 720px; 
+
+@mixin parallax ($img, $height){
+    height: $height;
     width: 100%;
     background-image: url($img);
     background-attachment: fixed;
@@ -29,3 +32,11 @@ $skillBackColor: #BFD0E0;
     background-blend-mode: darken;
 }
 
+@mixin skill-img{
+    width: 90px;
+    height: 90px;
+    object-fit: scale-down;
+    object-position:  100%;
+    border: 5px solid $circleBorderColor;
+    background-color: $circleFillColor;
+}

@@ -1,20 +1,22 @@
 @import '../../SASS/Variables';
-
 .skill-container{
     height: fit-content;
+    img{
+        display: none;
+    }
     
     .img-container{
         width: 100%;
 
         .skill-img{
-            width: 90px;
-            height: 90px;
-            object-fit: scale-down;
-            object-position:  100%;
-            border: 5px solid $circleBorderColor;
-            background-color: $circleFillColor;
+            display: block;
+            @include skill-img;
             animation: dropDown 1.5s ease-in normal; 
-            
+        }
+        .undefined{
+            @include skill-img;
+            opacity: 0;
+            animation: dropUp 1.5s ease-in normal;
         }
     }
 }
@@ -25,36 +27,23 @@
 }
 
 
-
-.undefined{
-    opacity: 0;
-    width: 90px;
-    height: 90px;
-    object-fit: scale-down;
-    object-position:  100%;
-    border: 5px solid $circleBorderColor;
-    background-color: $circleFillColor;
-    animation: dropUp 1.5s ease-in normal;
-}
-
 .stretch{
     height: 30vh;
     
 }
 
 
+//Animations
 
 @keyframes dropDown {
     0%{
         display: none;
         opacity: 0;
         transform: translateY(-15vh);
-
     }
     100%{
         opacity: 100%;
         transform: translateY(0vh);
-
     }
 } 
 
@@ -62,7 +51,6 @@
     0%{
         opacity: 100%;
         transform: translateY(0vh);
-        
     }
     100%{
         transform: translateY(-15vh);

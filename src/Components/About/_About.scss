@@ -1,6 +1,7 @@
 @import '../../SASS/Variables';
 
 .about-container{
+    font-family: $navFont;
     background-color: $aboutBackColor;
     height: fit-content;
     .container-about{

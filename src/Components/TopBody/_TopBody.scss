@@ -3,17 +3,21 @@
 .body{
     height: 100%;
     .upperImg{
-        @include parallax('../Images/TopBody/Laptop.jpg', 720px);
+        @include parallax('../Images/TopBody/Crowd.jpg', 100vh);
         .txt-container{
             color: $navTextColor;
             text-align: center;
-            padding-top: 30vh;
+
             .txt{
-                // font-family: $topBodyFont;
                 font-family: $navFont;
                 font-weight: bold;
                 font-size: 64px;
                 line-height: 90%;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 span{
                     font-size: 40px;
                 }
@@ -26,8 +30,7 @@
     }
     
     .lowerImg{
-        @include parallax('../Images/TopBody/Typing.jpg', 420px );
-        
+        @include parallax('../Images/TopBody/WTWTR.jpg', 58vh ); 
     }
 
 

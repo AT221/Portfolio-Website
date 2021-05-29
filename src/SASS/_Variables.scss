@@ -14,10 +14,12 @@ $topBodyFont: 'Nobile', sans-serif;
 //Skills
 $circleBorderColor: #000;
 $circleFillColor: #E9F1F7;
-$skillBackColor: #BFD0E0;
+$skillBackColor: #293132;
+
 
 //About
-$aboutBackColor: #BFD0E0;
+$aboutBackColor: #293132;
+
 
 
 @mixin parallax ($img, $height){

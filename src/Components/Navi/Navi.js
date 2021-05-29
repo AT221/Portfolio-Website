@@ -9,6 +9,7 @@ const Navi = (props) => {
     const handleScroll = () =>{
         window.scrollY > 667 ? props.setScroll(true) : props.setScroll(false);
         window.scrollY > 200 ? props.setBounce(true) : props.setBounce(false);
+        console.log(window.scrollY)
       }
       window.addEventListener('scroll', handleScroll);
 

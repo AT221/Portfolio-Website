@@ -21,7 +21,7 @@ const Skills = (props) => {
                                                 {image.description}
                                                 </Tooltip>
                                             }>
-                                <Image className={props.bounce ? 'skill-img' : 'undefined'} src={image.img} roundedCircle />
+                                <Image id={props.bounce ? 'skill-img' : 'img-default'}  src={image.img} roundedCircle />
                                 </OverlayTrigger> 
                             </Col>
                         )

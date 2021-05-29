@@ -1,27 +1,19 @@
 @import '../../SASS/Variables';
+
 .skill-container{
     height: fit-content;
-    img{
-        display: none;
-    }
     
     .img-container{
         width: 100%;
 
-        .skill-img{
-            display: block;
+        #skill-img{
             @include skill-img;
             animation: dropDown 1.5s ease-in normal; 
-        }
-        .undefined{
-            @include skill-img;
-            opacity: 0;
-            animation: dropUp 1.5s ease-in normal;
         }
     }
 }
 
-.skill-img:hover{
+#skill-img:hover{
     transform: scale(1.5);
     padding: .3em;
 }
@@ -32,6 +24,12 @@
     
 }
 
+#img-default{
+    @include skill-img;
+
+opacity: 0;
+animation: dropUp 1.5s ease-in normal;
+}
 
 //Animations
 
@@ -53,7 +51,7 @@
         transform: translateY(0vh);
     }
     100%{
-        transform: translateY(-15vh);
+        transform: translateY(-10vh);
         opacity: 0;
 
     }

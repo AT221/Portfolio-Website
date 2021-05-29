@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import About from '../About/About';
 import Navi from '../Navi/Navi';
+import Portfolio from '../Portfolio/Portfolio';
 import TopBody from '../TopBody/TopBody';
 
 import './_App.scss';
@@ -16,6 +17,7 @@ const App = () => {
         <Navi scroll={scroll} setScroll={setScroll} setBounce={setBounce}/>
         <TopBody bounce={bounce} />
         <About/>
+        <Portfolio/>
     </div>
   )
 }

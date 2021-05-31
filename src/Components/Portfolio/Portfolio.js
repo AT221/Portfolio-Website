@@ -1,16 +1,11 @@
 import React from 'react';
 import './_Portfolio.scss';
-import {Container, Row, Col, Card, Button,Accordion, ListGroup, ListGroupItem, Fade} from 'react-bootstrap';
+import {Container, Row, Col, Card, Button,Accordion, ListGroup, Fade} from 'react-bootstrap';
 
 import PortfolioData from './PortfolioData';
 
 const Portfolio = (props) => {
 
-    let techArr = Object.values(PortfolioData);
-
-
-
-    
     const handleFade= (key) =>{
         if(!props.fade.includes(key)){          
             props.setFade([...props.fade, key]);
@@ -45,35 +40,28 @@ const Portfolio = (props) => {
                                     </Accordion.Toggle>
                                     </Card.Header>
 
-
-
                                     <Accordion.Collapse eventKey="0">
                                     <Fade in={props.fade.includes(id) ? props.fade: null}>
                                         <Card.Body className='port-descrip' id={id}>
                                         
                                         {/* {data.description} */}
-                                        
-                                   
                             <Card.Text>
                             
                                 <ListGroup className='techStack-container py-4'>
-
                                 <ListGroup horizontal className="my-2" key={id}>
-
-                  
-                        
-                                {techArr.map((data, id)=>{
-                              
+                                {data.techStack.map((tech)=>{
                                     return(
                                         <div>
-                                <ListGroup horizontal className="my-2" key={data.id}>
-                                    <ListGroup.Item>{JSON.stringify()}</ListGroup.Item>
-
+                                <ListGroup horizontal className="my-2">
+                                    <ListGroup.Item>{tech}</ListGroup.Item>
                                 </ListGroup>
                                         </div>
                                     )
                                     
                                 })}
+
+
+
                                 </ListGroup>
                                 
                                     {/* <ListGroupItem className='techStack'>

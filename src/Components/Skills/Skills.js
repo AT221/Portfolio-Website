@@ -1,7 +1,7 @@
 import React from 'react';
 import './_Skills.scss';
 import {Row, Col, Container, Image, OverlayTrigger,Tooltip} from 'react-bootstrap';
-import SkillsImages from '../Skills/SkillsImages';
+import SkillsImages from './SkillsData';
 
 const Skills = (props) => {
 
@@ -12,7 +12,7 @@ const Skills = (props) => {
                 <Row className='py-5'>
                     {SkillsImages.map((image, id)=>{
                         return(
-                            <Col className='img-container py-3'>
+                            <Col className='img-container py-3' key={id}>
                                 <OverlayTrigger
                                     placement="bottom"
                                     delay={{ show: 250, hide: 400 }}

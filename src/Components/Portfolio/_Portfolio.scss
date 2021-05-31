@@ -1,0 +1,24 @@
+@import '../../SASS/Variables';
+
+.container{
+    font-family: $portFont;
+    text-align: center;
+    .port-cards{
+       box-shadow: $boxShadow;
+       .port-title{
+           font-weight: bold;
+       }
+        .port-descrip{
+            text-align: left;
+            padding-top: 3vh;
+        }
+    }
+    .techStack-container{
+
+        .techStack{
+            text-align: left;
+            font-weight: bold;
+            
+        }
+    }
+}

@@ -7,21 +7,21 @@ const TopBody = (props) => {
     return (
         <div className='body'>
 
-        <div className='upperImg'>
-            <div className='txt-container'>
-                <p className='txt'> 
-                Austin Tyler 
-                <br/>
-                <span>Front-End Web Developer</span>
-                </p>
+            <div className='upperImg'>
+                <div className='txt-container'>
+                    <p className='txt'> 
+                    Austin Tyler 
+                    <br/>
+                    <span>Front-End Web Developer</span>
+                    </p>
+                </div>
             </div>
-        </div>
-        
-        <div className='skills'>
-           <Skills bounce={props.bounce}/>
-        </div>
+            
+            <div className='skills'>
+            <Skills bounce={props.bounce}/>
+            </div>
 
-        <div className='lowerImg'></div>
+            <div className='lowerImg'></div>
         </div>
     )
 }

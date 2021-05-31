@@ -21,6 +21,16 @@ $skillBackColor: #293132;
 $aboutBackColor: #293132;
 
 
+//Portfolio
+$portFont:'Alef', sans-serif;
+// $boxShadow: 5px 5px 15px 5px #000000;
+$boxShadow: 5px 5px 15px 5px rgba(0,0,0,0.67);
+
+
+
+// $boxShadow: 10px 5px 18px  rgba(94, 91, 91, 0.2);
+
+
 
 @mixin parallax ($img, $height){
     height: $height;

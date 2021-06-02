@@ -1,6 +1,6 @@
-import {React, useEffect} from 'react';
+import {React} from 'react';
 import './_Portfolio.scss';
-import {Container, Row, Col, Card, Button,Accordion, ListGroup, Fade, CardGroup} from 'react-bootstrap';
+import {Container, Row, Col, Card, Button,Accordion, Fade, CardGroup, Badge} from 'react-bootstrap';
 
 import PortfolioData from './PortfolioData';
 
@@ -16,13 +16,14 @@ const Portfolio = (props) => {
 
     return (
         <div>
+
             <Container className='container'>
                 <Row className='py-5'>
                     {PortfolioData.map((data,id)=>{
                         return(
                             <Col key={data.id}>
-                                <Card  className='my-3 port-cards' >
-                                    <Card.Img variant="top" src={data.img} />
+                                <Card  className='my-3 port-cards' border="dark">
+                                    <Card.Img variant="top" src={data.img}  className='card-img'/>
                                 <Card.Body >
                                 <Accordion >
                                     <Card.Header>
@@ -36,14 +37,14 @@ const Portfolio = (props) => {
                                     </Card.Header>
                                 <Accordion.Collapse eventKey="0" >
                                     <Fade in={props.fade.includes(data.id) ? props.fade: null}>
-                                <CardGroup className='mt-3'>
+                                <CardGroup className='mt-3' g>
                     {data.techStack.map((tech)=>{
                         return(
                             <Col xs sm md lg xl={6} >
                                 <Card className='m-1' >
-                                        <Button variant='primary' className='port-button'>
-                                        {tech}
-                                        </Button>
+                                <Badge  className='tech-stacks'>
+                                    {tech}
+                                </Badge>
                                 </Card>
                             </Col>
                         )

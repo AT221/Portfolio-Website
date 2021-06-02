@@ -26,9 +26,8 @@
 
 #img-default{
     @include skill-img;
-
-opacity: 0;
-animation: dropUp 1.5s ease-in normal;
+    opacity: 0;
+    animation: dropUp 1.5s ease-in-out normal;
 }
 
 //Animations

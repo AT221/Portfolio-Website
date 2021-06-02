@@ -3,12 +3,43 @@
 .container{
     font-family: $portFont;
     text-align: center;
+    .card-img{
+        animation: fadeOut .5s ease-in-out normal;
+    }
+    .card-img:hover{
+        animation: fadeIn .5s ease-in normal;
+        filter: brightness(60%);
+    }
     .port-cards{
        box-shadow: $boxShadow;
        .port-title{
            font-weight: bold;
        }
     }
-
+    .tech-stacks{
+        background-color: $badgeColor;
+    }
+    .tech-stacks:hover{
+        background-color: $badgeHighlightColor;
+    }
 }
 
+
+@keyframes fadeIn {
+    0%{
+        filter: brightness(100%)
+    }
+    100%{
+        filter: brightness(60%);
+    }
+    
+} 
+@keyframes fadeOut {
+    0%{
+        filter: brightness(60%);
+    }
+    100%{
+        filter: brightness(100%)
+    }
+    
+} 

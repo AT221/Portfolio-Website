@@ -3,7 +3,7 @@ import Navi from '../Navi/Navi';
 import TopBody from '../TopBody/TopBody';
 import About from '../About/About';
 import Portfolio from '../Portfolio/Portfolio';
-
+// import Contact from '../Contact/Contact';
 import './_App.scss';
 
 
@@ -21,6 +21,7 @@ const App = () => {
         <TopBody bounce={bounce} />
         <About/>
         <Portfolio fade={fade} setFade={setFade}/>
+        {/* <Contact /> */}
     </div>
   )
 }

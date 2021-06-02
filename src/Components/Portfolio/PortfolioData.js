@@ -20,6 +20,7 @@ const PortfolioData = [
                 'CSS3',
                 'OOP'
             ],
+            
 
     },
     {
@@ -53,6 +54,7 @@ const PortfolioData = [
                 'CSS3',
                 'SASS',
             ],
+
         },
         {
             id: 4,

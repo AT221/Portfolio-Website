@@ -19,14 +19,17 @@
 
 .btn-row{
     padding-top: 2vh;
+    .port-btn{
+        transition: .3s ease-in;
+    }
+    .port-btn:hover{
+        transform: scale(1.5);
+        cursor: pointer;
+    }
+    .link{
+        color: #000;
+    }
 }
 
-.port-btn{
-    transition: .3s ease-in;
-}
-.port-btn:hover{
-    transform: scale(1.5);
-    cursor: pointer;
-}
 
 }

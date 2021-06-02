@@ -6,9 +6,9 @@ import Profile from '../../Images/About/Profile-05.jpeg';
 
 const About = () => {
     return (
-        <div className='about-container'>
+        <div className='about-container' id='about'>
             <Container className='container-about'>
-                <Row>
+                <Row >
                     <Col sm={12} md={6} lg={5} xl={4}>
                         <div className='img-container' >
                         <Image  src={Profile} className='about-img' roundedCircle />

@@ -7,11 +7,9 @@
     font-family:$navFont;
     .brand{
         margin-left: 4vw;
-        // border: 5px solid $navTextColor;
-        // border: 2px solid $navTextColor;
         padding: 2vh;
         font-size: 34px;
-        // animation: pulsate 10s ease-in infinite forwards; 
+        animation: pulsate 10s ease-in infinite forwards; 
         span{
             font-weight: bolder;
             padding-left: 7px;
@@ -25,7 +23,10 @@
     }
     
 }
-
+.active{
+  text-decoration: underline;
+  text-decoration-color: $navHover;
+}
 #nav{
     background-color: rgba(0, 0, 0, 0.616);
     // background-color: rgba(0, 0, 0, 0.418);

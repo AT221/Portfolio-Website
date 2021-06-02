@@ -5,6 +5,7 @@ import {Container, Row, Col, Card, Button,Accordion, Fade, CardGroup, Badge} fro
 import {FaGithubSquare} from "react-icons/fa";
 import {FiLogOut} from 'react-icons/fi';
 
+import {Link} from 'react-router-dom';
 
 const Portfolio = (props) => {
     
@@ -19,7 +20,7 @@ const Portfolio = (props) => {
     return (
         <div>
     
-            <Container className='container'>
+            <Container className='container' id ='portfolio'>
                 <Row className='py-5'>
                     {PortfolioData.map((data,id)=>{
                         return(
@@ -29,11 +30,15 @@ const Portfolio = (props) => {
                 
                                     <Row className='btn-row'>
                                         <Col  >
-                                            <FaGithubSquare size='2.8em' className='port-btn' ></FaGithubSquare>
+                                        <Link to={{ pathname: data.github}} target="_blank" className='link'>
+                                        <FaGithubSquare size='2.8em' className='port-btn'></FaGithubSquare>
+                                        </Link>
                                         </Col>
 
                                         <Col xs sm md lg xl={6} >
+                                        <Link to={{ pathname: data.url }} target="_blank" className='link'>
                                             <FiLogOut size='2.8em' className='port-btn'></FiLogOut>
+                                        </Link>
                                         </Col>
                                     </Row>
 

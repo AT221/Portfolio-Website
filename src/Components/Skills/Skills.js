@@ -7,7 +7,7 @@ const Skills = (props) => {
 
 
     return (
-        <div>
+        <div >
             <Container className={props.bounce ? 'skill-container' : 'stretch'} >
                 <Row className='py-5'>
                     {SkillsImages.map((image, id)=>{

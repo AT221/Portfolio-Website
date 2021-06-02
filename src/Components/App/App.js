@@ -5,8 +5,9 @@ import About from '../About/About';
 import Portfolio from '../Portfolio/Portfolio';
 // import Contact from '../Contact/Contact';
 import './_App.scss';
+import {Route, Switch} from 'react-router-dom';
 
-
+import { Element } from 'react-scroll';
 
 const App = () => {
   const [scroll, setScroll] = useState(false);
@@ -14,13 +15,19 @@ const App = () => {
   const [fade, setFade] = useState([]);
 
 
-
   return (
     <div>
         <Navi scroll={scroll} setScroll={setScroll} setBounce={setBounce}/>
+
+    
         <TopBody bounce={bounce} />
+
+       
+
         <About/>
+        
         <Portfolio fade={fade} setFade={setFade}/>
+
         {/* <Contact /> */}
     </div>
   )

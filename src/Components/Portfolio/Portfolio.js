@@ -1,8 +1,10 @@
 import {React} from 'react';
 import './_Portfolio.scss';
-import {Container, Row, Col, Card, Button,Accordion, Fade, CardGroup, Badge} from 'react-bootstrap';
-
 import PortfolioData from './PortfolioData';
+import {Container, Row, Col, Card, Button,Accordion, Fade, CardGroup, Badge} from 'react-bootstrap';
+import {FaGithubSquare} from "react-icons/fa";
+import {FiLogOut} from 'react-icons/fi';
+
 
 const Portfolio = (props) => {
     
@@ -16,7 +18,7 @@ const Portfolio = (props) => {
 
     return (
         <div>
-
+    
             <Container className='container'>
                 <Row className='py-5'>
                     {PortfolioData.map((data,id)=>{
@@ -24,6 +26,17 @@ const Portfolio = (props) => {
                             <Col key={data.id}>
                                 <Card  className='my-3 port-cards' border="dark">
                                     <Card.Img variant="top" src={data.img}  className='card-img'/>
+                
+                                    <Row className='btn-row'>
+                                        <Col  >
+                                            <FaGithubSquare size='2.8em' className='port-btn' ></FaGithubSquare>
+                                        </Col>
+
+                                        <Col xs sm md lg xl={6} >
+                                            <FiLogOut size='2.8em' className='port-btn'></FiLogOut>
+                                        </Col>
+                                    </Row>
+
                                 <Card.Body >
                                 <Accordion >
                                     <Card.Header>
@@ -65,5 +78,3 @@ const Portfolio = (props) => {
 }
 
 export default Portfolio
-
-

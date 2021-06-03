@@ -1,16 +1,16 @@
 import {React, useEffect} from 'react';
 import './_Navi.scss';
-import {Link} from 'react-scroll';
+import {Link, animateScroll} from 'react-scroll';
 
 import {Nav, Navbar, Row, Col, Container} from 'react-bootstrap';
 
 const Navi = (props) => {
-    
 
 useEffect(()=>{
     const handleScroll = () =>{
-        window.scrollY > 667 ? props.setScroll(true) : props.setScroll(false);
-        window.scrollY > 200 ? props.setBounce(true) : props.setBounce(false);
+        window.scrollY > 100 ? props.setScroll(`$true`) : props.setScroll(false);
+        window.scrollY > 200 ? props.setBounce(`$true`) : props.setBounce(false);
+        console.log(window.scrollY)
     }
     window.addEventListener('scroll', handleScroll);
 })
@@ -29,42 +29,59 @@ useEffect(()=>{
                 
                     <Col xs sm md lg ='6' >
                     <Navbar.Collapse id='responsive-navbar-nav'>
-                    <Nav className='me-auto x'  >
-                        <Link
-                            to='home'
-                            smooth ={true}
-                            duration={1400}
-                            >
-                            <Nav.Link className='nav-links'>Home</Nav.Link>
-                        </Link>
-                        <Link
-                            to='skills'
-                            smooth ={true}
-                            duration={1400}
-                            >
-                            <Nav.Link className='nav-links'>Skills</Nav.Link>
-                        </Link>
-                        <Link
-                            to='portfolio'
-                            smooth ={true}
-                            duration={1400}
-                            >
-                            <Nav.Link className='nav-links'>Portfolio</Nav.Link>
-                        </Link>
-                        <Link
-                            to='about'
-                            smooth ={true}
-                            duration={1400}
-                            >
-                            <Nav.Link className='nav-links'>About</Nav.Link>
-                        </Link>
-                        <Link
-                            to='contact'
-                            smooth ={true}
-                            duration={1400}
-                            >
-                            <Nav.Link className='nav-links'>Contact</Nav.Link>
-                        </Link>
+                    <Nav className='me-auto x'>
+                            <Nav.Link
+                                as={Link} 
+                                to='home'
+                                smooth ={true}
+                                duration={2000}
+                                delay={100}
+                                isDynamic={true} 
+                                className='nav-links'>Home
+                            </Nav.Link>
+
+                            <Nav.Link
+                                as={Link}  
+                                to='skills'
+                                smooth ={true}
+                                duration={2500}
+                                delay={100}
+                                isDynamic={true}
+                                className='nav-links'>Skills
+                            </Nav.Link>
+                       
+                            <Nav.Link
+                                as={Link}  
+                                to='portfolio'
+                                smooth ={true}
+                                duration={1800}
+                                delay={100}
+                                isDynamic={true}
+                                offset={-70}
+                                className='nav-links'>Portfolio
+                            </Nav.Link>
+
+                            <Nav.Link
+                                as={Link}  
+                                to='about'
+                                smooth ={true}
+                                duration={1800}
+                                delay={100}
+                                isDynamic={true}
+                                offset={-180}
+                                className='nav-links'>About
+                            </Nav.Link>
+         
+                            <Nav.Link 
+                                as={Link} 
+                                to='contact'
+                                smooth ={true}
+                                duration={1800}
+                                delay={100}
+                                isDynamic={true} 
+                                className='nav-links'>Contact
+                            </Nav.Link>
+
                     </Nav>
                     </Navbar.Collapse>
                     </Col>

@@ -23,9 +23,9 @@ const Portfolio = (props) => {
                 <Row className='py-5'>
                     {PortfolioData.map((data,id)=>{
                         return(
-                            <Col key={data.id}>
-                                <Card  className='my-3 port-cards' border='dark'>
-                                    <Card.Img variant='top' src={data.img}  className='card-img'/>
+                            <Col key={id}>
+                                <Card  className='my-3 port-cards' border='dark' >
+                                    <Card.Img variant='top' src={data.img} className='card-img'/>
                 
                                     <Row className='btn-row'>
                                         <Col  >
@@ -54,10 +54,10 @@ const Portfolio = (props) => {
                                     </Card.Header>
                                 <Accordion.Collapse eventKey='0' >
                                     <Fade in={props.fade.includes(data.id) ? props.fade: null}>
-                                <CardGroup className='mt-3' g>
-                    {data.techStack.map((tech)=>{
+                                <CardGroup className='mt-3'>
+                    {data.techStack.map((tech, ids)=>{
                         return(
-                            <Col xs sm md lg xl={6} >
+                            <Col xs sm md lg xl={6} key={ids} >
                                 <Card className='m-1' >
                                 <Badge  className='tech-stacks'>
                                     {tech}

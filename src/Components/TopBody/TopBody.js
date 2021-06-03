@@ -8,12 +8,12 @@ const TopBody = (props) => {
         <div className='body' id='home'>
             <div className='upperImg'>
                 <div className='txt-container'>
-                    <p className='txt'> 
+                    <div className='txt'> 
                     Austin Tyler 
                     <br/>
                     <span>Front-End Web Developer</span>
                     <p id='skills'></p>
-                    </p>
+                    </div>
                 </div>
             </div>
             

@@ -1,6 +1,6 @@
 import {React, useEffect} from 'react';
 import './_Navi.scss';
-import {Link, animateScroll} from 'react-scroll';
+import {Link} from 'react-scroll';
 
 import {Nav, Navbar, Row, Col, Container} from 'react-bootstrap';
 
@@ -10,7 +10,6 @@ useEffect(()=>{
     const handleScroll = () =>{
         window.scrollY > 100 ? props.setScroll(`$true`) : props.setScroll(false);
         window.scrollY > 200 ? props.setBounce(`$true`) : props.setBounce(false);
-        console.log(window.scrollY)
     }
     window.addEventListener('scroll', handleScroll);
 })
@@ -21,9 +20,16 @@ useEffect(()=>{
             <Navbar collapseOnSelect expand='sm' className=' p-2' fixed='top'  id={props.scroll ? 'nav' : undefined}>
                 <Container fluid>
                     <Col>
+                        <Nav.Link
+                                as={Link} 
+                                to='home'
+                                smooth ={true}
+                                duration={500}
+                                className='nav-links'>
                         <Navbar.Brand className='brand'>
-                        Austin<span>Tyler</span>
+                            Austin<span>Tyler</span>
                         </Navbar.Brand>
+                            </Nav.Link>
                     </Col>
                         <Navbar.Toggle className='mb-3 toggler' aria-controls='responsive-navbar-nav' />
                 
@@ -34,9 +40,7 @@ useEffect(()=>{
                                 as={Link} 
                                 to='home'
                                 smooth ={true}
-                                duration={2000}
-                                delay={100}
-                                isDynamic={true} 
+                                duration={500}
                                 className='nav-links'>Home
                             </Nav.Link>
 
@@ -44,9 +48,7 @@ useEffect(()=>{
                                 as={Link}  
                                 to='skills'
                                 smooth ={true}
-                                duration={2500}
-                                delay={100}
-                                isDynamic={true}
+                                duration={500}
                                 className='nav-links'>Skills
                             </Nav.Link>
                        
@@ -54,9 +56,7 @@ useEffect(()=>{
                                 as={Link}  
                                 to='portfolio'
                                 smooth ={true}
-                                duration={1800}
-                                delay={100}
-                                isDynamic={true}
+                                duration={500}
                                 offset={-70}
                                 className='nav-links'>Portfolio
                             </Nav.Link>
@@ -65,9 +65,7 @@ useEffect(()=>{
                                 as={Link}  
                                 to='about'
                                 smooth ={true}
-                                duration={1800}
-                                delay={100}
-                                isDynamic={true}
+                                duration={500}
                                 offset={-180}
                                 className='nav-links'>About
                             </Nav.Link>
@@ -76,9 +74,7 @@ useEffect(()=>{
                                 as={Link} 
                                 to='contact'
                                 smooth ={true}
-                                duration={1800}
-                                delay={100}
-                                isDynamic={true} 
+                                duration={500}
                                 className='nav-links'>Contact
                             </Nav.Link>
 

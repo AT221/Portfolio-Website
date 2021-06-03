@@ -1,6 +1,6 @@
 import React from 'react';
 import './_Contact.scss';
-import {Row, Col, Container, Image, Navbar} from 'react-bootstrap';
+import {Row, Col, Container, Image} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
 import github from '../../Images/Skills/GitHub.png';
@@ -20,8 +20,6 @@ const Contact = () => {
                 <Row>
                 <Col>
                 <Link to={{pathname: 'mailto: AustinTyler221@gmail.com'}} target='_blank' className='link'>
-                
-
                     <h4 className='email pb-4'>AustinTyler221@gmail.com</h4>
                 </Link>
                 </Col>

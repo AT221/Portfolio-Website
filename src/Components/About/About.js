@@ -1,7 +1,8 @@
 import React from 'react';
 import './_About.scss';
 import {Row, Col, Container, Image, Card, Button} from 'react-bootstrap';
-import Profile from '../../Images/About/Profile-05.jpeg';
+import Profile from '../../Images/About/Profile.jpeg';
+import Resume from '../../Images/About/Resume.pdf';
 
 
 const About = () => {
@@ -32,7 +33,7 @@ const About = () => {
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer className='text-muted'>
-                                    <Button variant='danger'>Download Resume</Button>
+                                    <Button variant='danger' href={Resume} target='_blank'>Open Resume</Button>
                                 </Card.Footer>
                             </Card>
                         </div>

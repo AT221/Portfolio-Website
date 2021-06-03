@@ -4,8 +4,6 @@ import {Row, Col, Container, Image, OverlayTrigger,Tooltip} from 'react-bootstra
 import SkillsImages from './SkillsData';
 
 const Skills = (props) => {
-
-
     return (
         <div >
             <Container className={props.bounce ? 'skill-container' : 'stretch'} >
@@ -14,10 +12,10 @@ const Skills = (props) => {
                         return(
                             <Col className='img-container py-3' key={id}>
                                 <OverlayTrigger
-                                    placement="bottom"
+                                    placement='bottom'
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={
-                                        <Tooltip id="button-tooltip" {...props}>
+                                        <Tooltip id='button-tooltip' {...props}>
                                                 {image.description}
                                                 </Tooltip>
                                             }>

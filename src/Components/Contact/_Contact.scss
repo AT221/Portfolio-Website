@@ -1,0 +1,26 @@
+@import '../../SASS/Variables';
+
+.contact-container{
+    background-color: $aboutBackColor;
+    font-family: $navFont;
+    color: $navTextColor;
+    .contact-title{
+        font-size: 36px;
+    }
+    .logo-row{
+        justify-content: center;
+        .contact-logos{
+            @include skill-img;
+            cursor: pointer;
+            transition: .3s linear;
+        }
+    }
+    .contact-logos:hover{
+        transform: scale(1.5);
+        padding: .3em;
+    }
+    .copyright{
+        text-align: center;
+    }
+
+}

@@ -19,48 +19,51 @@ useEffect(()=>{
         <div className='navi-container'>
             <Row>
             <Navbar collapseOnSelect expand='sm' className=' p-2' fixed='top'  id={props.scroll ? 'nav' : undefined}>
-                <Container fluid  >
+                <Container fluid>
                     <Col>
                         <Navbar.Brand className='brand'>
                         Austin<span>Tyler</span>
                         </Navbar.Brand>
                     </Col>
-                        <Navbar.Toggle className='mb-3'aria-controls="responsive-navbar-nav" />
+                        <Navbar.Toggle className='mb-3 toggler' aria-controls='responsive-navbar-nav' />
                 
-                    <Col xs sm md lg ='4' >
-                    <Navbar.Collapse id="responsive-navbar-nav" >
+                    <Col xs sm md lg ='6' >
+                    <Navbar.Collapse id='responsive-navbar-nav'>
                     <Nav className='me-auto x'  >
                         <Link
                             to='home'
-                            spy={true}
                             smooth ={true}
-                            activeClass="active"
+                            duration={1400}
                             >
-                            <Nav.Link className="nav-links">Home</Nav.Link>
+                            <Nav.Link className='nav-links'>Home</Nav.Link>
                         </Link>
                         <Link
                             to='skills'
-                            spy={true}
                             smooth ={true}
-                            activeClass="active"
+                            duration={1400}
                             >
-                            <Nav.Link className="nav-links">Skills</Nav.Link>
+                            <Nav.Link className='nav-links'>Skills</Nav.Link>
                         </Link>
                         <Link
                             to='portfolio'
-                            spy={true}
                             smooth ={true}
-                            activeClass="active"
+                            duration={1400}
                             >
-                            <Nav.Link className="nav-links">Portfolio</Nav.Link>
+                            <Nav.Link className='nav-links'>Portfolio</Nav.Link>
                         </Link>
                         <Link
                             to='about'
-                            spy={true}
                             smooth ={true}
-                            activeClass="active"
+                            duration={1400}
                             >
-                            <Nav.Link className="nav-links">About</Nav.Link>
+                            <Nav.Link className='nav-links'>About</Nav.Link>
+                        </Link>
+                        <Link
+                            to='contact'
+                            smooth ={true}
+                            duration={1400}
+                            >
+                            <Nav.Link className='nav-links'>Contact</Nav.Link>
                         </Link>
                     </Nav>
                     </Navbar.Collapse>
@@ -68,7 +71,6 @@ useEffect(()=>{
                 </Container>
             </Navbar>
             </Row>
-            
         </div>
     )
 }

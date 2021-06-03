@@ -1,13 +1,11 @@
-import React, {useState} from 'react';
+import {React, useState} from 'react';
 import Navi from '../Navi/Navi';
 import TopBody from '../TopBody/TopBody';
 import About from '../About/About';
 import Portfolio from '../Portfolio/Portfolio';
-// import Contact from '../Contact/Contact';
+import Contact from '../Contact/Contact';
 import './_App.scss';
-import {Route, Switch} from 'react-router-dom';
 
-import { Element } from 'react-scroll';
 
 const App = () => {
   const [scroll, setScroll] = useState(false);
@@ -18,17 +16,10 @@ const App = () => {
   return (
     <div>
         <Navi scroll={scroll} setScroll={setScroll} setBounce={setBounce}/>
-
-    
         <TopBody bounce={bounce} />
-
-       
-
         <About/>
-        
         <Portfolio fade={fade} setFade={setFade}/>
-
-        {/* <Contact /> */}
+        <Contact />
     </div>
   )
 }

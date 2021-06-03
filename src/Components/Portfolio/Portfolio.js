@@ -2,7 +2,7 @@ import {React} from 'react';
 import './_Portfolio.scss';
 import PortfolioData from './PortfolioData';
 import {Container, Row, Col, Card, Button,Accordion, Fade, CardGroup, Badge} from 'react-bootstrap';
-import {FaGithubSquare} from "react-icons/fa";
+import {FaGithubSquare} from 'react-icons/fa';
 import {FiLogOut} from 'react-icons/fi';
 
 import {Link} from 'react-router-dom';
@@ -18,25 +18,24 @@ const Portfolio = (props) => {
     };
 
     return (
-        <div>
-    
-            <Container className='container' id ='portfolio'>
+        <div className='py-5' id ='portfolio'>
+            <Container className='container py-5' >
                 <Row className='py-5'>
                     {PortfolioData.map((data,id)=>{
                         return(
                             <Col key={data.id}>
-                                <Card  className='my-3 port-cards' border="dark">
-                                    <Card.Img variant="top" src={data.img}  className='card-img'/>
+                                <Card  className='my-3 port-cards' border='dark'>
+                                    <Card.Img variant='top' src={data.img}  className='card-img'/>
                 
                                     <Row className='btn-row'>
                                         <Col  >
-                                        <Link to={{ pathname: data.github}} target="_blank" className='link'>
+                                        <Link to={{ pathname: data.github}} target='_blank' className='link'>
                                         <FaGithubSquare size='2.8em' className='port-btn'></FaGithubSquare>
                                         </Link>
                                         </Col>
 
                                         <Col xs sm md lg xl={6} >
-                                        <Link to={{ pathname: data.url }} target="_blank" className='link'>
+                                        <Link to={{ pathname: data.url }} target='_blank' className='link'>
                                             <FiLogOut size='2.8em' className='port-btn'></FiLogOut>
                                         </Link>
                                         </Col>
@@ -49,11 +48,11 @@ const Portfolio = (props) => {
                                         onClick={()=>{handleFade(data.id)}}
                                             aria-controls={data.id}
                                             aria-expanded={props.fade}
-                                            as={Button} variant="link" eventKey="0">
+                                            as={Button} variant='link' eventKey='0'>
                                         TechStack:
                                         </Accordion.Toggle>
                                     </Card.Header>
-                                <Accordion.Collapse eventKey="0" >
+                                <Accordion.Collapse eventKey='0' >
                                     <Fade in={props.fade.includes(data.id) ? props.fade: null}>
                                 <CardGroup className='mt-3' g>
                     {data.techStack.map((tech)=>{

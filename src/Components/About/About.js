@@ -16,7 +16,7 @@ const About = () => {
                     </Col>
                     <Col sm={12} md={6} lg={7} xl={8}>
                         <div className='card-container'>
-                            <Card className="text-center">
+                            <Card className='text-center'>
                                 <Card.Header>About Me</Card.Header>
                                 <Card.Body>
                                     <Card.Text>
@@ -31,8 +31,8 @@ const About = () => {
                                         and am constantly seeking to improve my skills wherever and whenever possible. 
                                     </Card.Text>
                                 </Card.Body>
-                                <Card.Footer className="text-muted">
-                                    <Button variant="danger">Download Resume</Button>
+                                <Card.Footer className='text-muted'>
+                                    <Button variant='danger'>Download Resume</Button>
                                 </Card.Footer>
                             </Card>
                         </div>

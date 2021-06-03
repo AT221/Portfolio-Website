@@ -6,51 +6,49 @@
 .navi-container{
     font-family:$navFont;
     .brand{
-        margin-left: 4vw;
+      margin-left: 4vw;
         padding: 2vh;
         font-size: 34px;
         animation: pulsate 10s ease-in infinite forwards; 
         span{
-            font-weight: bolder;
-            padding-left: 7px;
+          font-weight: bolder;
+          padding-left: 7px;
         }
-    }
-    
-    .nav-links{
+      }
+      
+      .nav-links{
         margin: 0 2vw;
         font-size: 20px;
-        // animation: pulsate 10s ease-in infinite forwards; 
+      }
+      
+    }
+    #nav{
+      background-color: rgba(0, 0, 0, 0.616);
     }
     
-}
-.active{
-  text-decoration: underline;
-  text-decoration-color: $navHover;
-}
-#nav{
-    background-color: rgba(0, 0, 0, 0.616);
-    // background-color: rgba(0, 0, 0, 0.418);
-}
-
-@keyframes pulsate {
-    0% {
-      color: $navTextColor;
+    @keyframes pulsate {
+      0% {
+        color: $navTextColor;
+      }
+      50% {
+        color: $pulsatingColor;
+      }
+      100% {
+        color: $navTextColor;
+      }
     }
-    50% {
-      color: $pulsatingColor;
-    }
-    100% {
-      color: $navTextColor;
-    }
-  }
+    
 
-//NavBar Colors
-$navbar-light-color:  $navTextColor ;
-$navbar-light-active-color:         $navTextColor;
-$navbar-light-brand-color:           $navTextColor;
-$navbar-light-hover-color:        $navHover;
-$navbar-light-brand-hover-color:    $navHover;
-
-@import "~bootstrap/scss/bootstrap";
-
-
+    //NavBar Colors
+    $navbar-light-color: $navTextColor ;
+    $navbar-light-active-color: $navTextColor;
+    $navbar-light-brand-color: $navTextColor;
+    $navbar-light-hover-color: $navHover;
+    $navbar-light-brand-hover-color: $navHover;
+    $navbar-light-toggler-border-color: $navTextColor;
+    $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    
+    @import "~bootstrap/scss/bootstrap";
+    
+    
+    

@@ -8,7 +8,9 @@
 
         #skill-img{
             @include skill-img;
-            animation: dropDown 1.5s ease-in normal; 
+            animation: dropDown 1.5s ease-in normal;
+            transition: .2s linear;
+ 
         }
     }
 }
@@ -18,10 +20,8 @@
     padding: .3em;
 }
 
-
 .stretch{
     height: 30vh;
-    
 }
 
 #img-default{

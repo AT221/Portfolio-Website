@@ -17,7 +17,7 @@ $circleFillColor: #E9F1F7;
 $skillBackColor: #293132;
 
 
-//About
+//About and Contact
 $aboutBackColor: #293132;
 
 
@@ -26,6 +26,8 @@ $portFont:'Alef', sans-serif;
 $boxShadow: 5px 5px 15px 5px rgba(0,0,0,0.67);
 $badgeColor: #0d6efd;
 $badgeHighlightColor: #045ee4;
+
+
 
 
 @mixin parallax ($img, $height){
@@ -47,24 +49,5 @@ $badgeHighlightColor: #045ee4;
     object-position:  100%;
     border: 5px solid $circleBorderColor;
     background-color: $circleFillColor;
+    
 }
-
-
-
-// Img Colors
-
-// Yellow Bright 
-// #FEC12D
-
-// Yellow 02
-// #EBE102
-
-// Orange
-// #FF6610
-
-// Pink
-// #EC1191
-
-// Darker Pink
-// #F6435F
-

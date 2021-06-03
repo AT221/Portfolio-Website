@@ -20,7 +20,7 @@ const TopBody = (props) => {
             <div className='skills' >
             <Skills bounce={props.bounce}/>
             </div>
-
+            
             <div className='lowerImg'>
             </div>
         </div>
